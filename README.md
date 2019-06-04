@@ -28,7 +28,7 @@ The location and position of both R2-D2 are shown by default on the right hand s
 ### Force Mode 🙌
 This game is an extension and slight modification of the original mode game-type. In this version of the game R2-D2 can look and move in any direction.<br>
 
-You may also control the movement of R2-D2 with the arrow keys on your keyboard.<br>
+You may also control the movement of R2-D2 with the arrow keys on your <b>keyboard</b>.<br>
 
 
 ## Running Locally
