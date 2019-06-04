@@ -20,11 +20,14 @@ This Star Wars Minigame was made to showcase my React JS and problem solving ski
 
 ### Original Mode
 In this game mode the game starts when the 'Start Game' button is clicked on the game menu. R2-D2 and Obi Wan Kenobi are both randomly placed on the game board.<br>
+
 You have the option rotate left and right and also move. You control the X in move(x) by changing the number of spaces R2-D2 is to move on the left hand side of the game control panel.<br>
+
 The location and position of both R2-D2 are shown by default on the right hand side of the game board and can be toggled on and off by clicking the radar icon.
 
 ### Force Mode 🙌
 This game is an extension and slight modification of the original mode game-type. In this version of the game R2-D2 can look and move in any direction.<br>
+
 You may also control the movement of R2-D2 with the arrow keys on your keyboard.<br>
 
 
