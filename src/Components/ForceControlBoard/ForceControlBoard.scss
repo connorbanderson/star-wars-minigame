@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.ForceControlBoardWrapper{
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 140px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  opacity: 0;
+  animation: fadeIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 5px;
+}
+
+.keycap{
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: $r2d2PrimaryColor;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.extraActionMenu{
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  .extraActionIcon{
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+  }
+}

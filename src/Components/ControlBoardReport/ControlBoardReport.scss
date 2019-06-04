@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+.controlBoardReportWrapper{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  height: calc(100% - 40px);
+  width: 200px;
+  .extraActionIcon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+  }
+  .inactive{
+    opacity: .4;
+  }
+  .reportTextWrapper{
+    max-width: 86%;
+    font-size: 14px;
+    color: #212121;
+    opacity: 0;
+    margin-bottom: -30px;
+    span{
+      margin-bottom: 2px;
+      text-align: left;
+    }
+  }
+}
+
+.fadeUp{
+  animation: fadeUp 1s forwards;
+}
+
+.fadeDown{
+  animation: fadeDown 1s forwards;
+}
+
+
+@keyframes fadeUp {
+  to{
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes fadeDown {
+  from{
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+  to{
+    opacity: 0;
+    margin-bottom: -30px;
+  }
+}

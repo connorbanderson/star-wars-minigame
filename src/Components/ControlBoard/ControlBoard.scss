@@ -1,0 +1,80 @@
+@import "../../variables.scss";
+
+.ControlBoardWrapper{
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 140px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  opacity: 0;
+  animation: fadeIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 5px;
+  .keycap{
+    height: 40px;
+    width: 50px;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: $r2d2PrimaryColor;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: bold;
+  }
+  .movementActionMenu{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    .arrowButton{
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      margin: 5px;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    span{
+      font-size: 55px;
+      text-align: center;
+      width: 60px;
+    }
+    .moveDescription{
+      font-size: 16px;
+    }
+    svg{
+      height: 12px;
+      width: 12px;
+    }
+  }
+  .reportWrapper{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: calc(100% - 40px);
+    width: 200px;
+    .extraActionIcon{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 38px;
+      width: 38px;
+      cursor: pointer;
+    }
+    .inactive{
+      opacity: .7;
+    }
+    .reportTextWrapper{
+      max-width: 86%;
+      font-size: 14px;
+      color: $darkGrey;
+      opacity: 0;
+      margin-bottom: -30px;
+      span{
+        margin-bottom: 2px;
+        text-align: left;
+      }
+    }
+  }
+}

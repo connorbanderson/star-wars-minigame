@@ -1,0 +1,18 @@
+@import "../../variables.scss";
+
+.gameBoardWrapper{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: white;
+  height: 600px;
+  width: 600px;
+  opacity: 0;
+  animation: fadeIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 5px;
+}
+
+.boardRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

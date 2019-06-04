@@ -1,0 +1,179 @@
+@import "variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.r2d2Text{
+  font-weight: bold;
+  background: -webkit-linear-gradient($r2d2PrimaryColor, $r2d2SecondaryColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.obiText{
+  font-weight: bold;
+  background: -webkit-linear-gradient($obiPrimaryColor, $obiSecondaryColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button{
+  width: 160px;
+  font-size: 28px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 8px 12px 8px 12px;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  &:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.23), 0 6px 12px rgba(0,0,0,0.33);
+  }
+}
+
+.originalButton{
+  background: $starWarsSecondaryColor;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(-145deg, $starWarsSecondaryColor, $starWarsSecondaryDarkColor);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-145deg, $starWarsSecondaryColor, $starWarsSecondaryDarkColor); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+  color: #FFE81F;
+}
+
+.forceButton{
+  background: $forcePrimary;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(-145deg, $forceSecondary, $forcePrimary);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-145deg, $forceSecondary, $forcePrimary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+  color: white;
+  animation: animateGradient 2s ease infinite;
+}
+
+.gameMenuWrapper{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: white;
+  height: 460px;
+  width: 560px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 5px;
+}
+
+.gameMenuFadeOut{
+  opacity: 1;
+  animation: fadeOut 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.disabled{
+  cursor: not-allowed !important;
+  opacity: .4 !important;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexWrap{
+  flex-wrap: wrap;
+}
+
+.flexCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexColStart{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexColLeft{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flexColBottom{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexColSpaceBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexColSpaceAround{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fullWidth{
+  width: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.fadeUp{
+  animation: fadeUp 1s forwards;
+}
+
+.fadeDown{
+  animation: fadeDown 1s forwards;
+}
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  to{
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes fadeDown {
+  from{
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+  to{
+    opacity: 0;
+    margin-bottom: -30px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.winnerMenuWrapper{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: white;
+  height: 460px;
+  width: 560px;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 5px;
+}
+
+.winnerText{
+  font-size: 42px;
+  background: -webkit-linear-gradient($starWarsSecondaryColor, $starWarsSecondaryDarkColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
